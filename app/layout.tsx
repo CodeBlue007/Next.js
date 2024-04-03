@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
+import { roboto } from '../styles/fonts'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
+      <body className={roboto.className}>
         <Header />
         {children}
       </body>

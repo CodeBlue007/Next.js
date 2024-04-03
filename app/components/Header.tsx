@@ -1,16 +1,27 @@
+import Link from 'next/link'
+
 export default function Header() {
   return (
     <header>
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <a href="/movies">Movies</a>
+            <Link href="/movies">Movies</Link>
+          </li>
+          <li>
+            <Link href="/async">Async</Link>
+          </li>
+          <li>
+            <Link href="/delay">delay</Link>
+          </li>
+          <li>
+            <Link href="/delay?revalidate=true">delay(revalidate)</Link>
           </li>
         </ul>
       </nav>
